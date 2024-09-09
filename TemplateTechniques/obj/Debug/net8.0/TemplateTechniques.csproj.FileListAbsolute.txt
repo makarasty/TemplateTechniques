@@ -1,5 +1,5 @@
-C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\bin\Debug\net8.0\testhost.exe
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\bin\Debug\net8.0\testhost.dll
+C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\bin\Debug\net8.0\testhost.exe
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
@@ -92,6 +92,7 @@ C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateT
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\obj\Debug\net8.0\TemplateTechniques.AssemblyInfoInputs.cache
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\obj\Debug\net8.0\TemplateTechniques.AssemblyInfo.cs
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\obj\Debug\net8.0\TemplateTechniques.csproj.CoreCompileInputs.cache
+C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\obj\Debug\net8.0\TemplateTechniques.sourcelink.json
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\obj\Debug\net8.0\Template.123F2A4B.Up2Date
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\obj\Debug\net8.0\TemplateTechniques.dll
 C:\Users\MaKarastY\Desktop\Projects\CSharp Projects\TemplateTechniques\TemplateTechniques\obj\Debug\net8.0\refint\TemplateTechniques.dll

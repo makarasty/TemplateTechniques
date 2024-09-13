@@ -1,57 +1,58 @@
-﻿using System;
-
 public abstract class Operation
 {
-	public abstract double Calculate(double a, double b);
-
-	protected virtual void Log(double a, double b, double result, string operation)
+	public virtual float Calculate(float a, float b)
 	{
-		Console.WriteLine($"{a} {operation} {b} = {result}");
+		ValidateInputs(a, b);
+
+		float result = DoCalculation(a, b);
+
+		LogOperation(a, b, result);
+
+		return result;
 	}
 
-	protected virtual void Validate(double a, double b)
+	protected abstract float DoCalculation(float a, float b);
+
+	protected virtual void ValidateInputs(float a, float b) { }
+
+	protected virtual void LogOperation(float a, float b, float result)
 	{
-		if (b == 0 && this is Divide)
-		{
-			throw new DivideByZeroException("Ділення на нуль неможливе.");
-		}
+		Console.WriteLine($"{a} {GetOperationSymbol()} {b} = {result}");
 	}
+
+	protected abstract string GetOperationSymbol();
 }
 
 public class Sum : Operation
 {
-	public override double Calculate(double a, double b)
-	{
-		double result = a + b;
-		Log(a, b, result, "+");
-		return result;
-	}
+	protected override float DoCalculation(float a, float b) => a + b;
 
-	protected override void Log(double a, double b, double result, string operation)
-	{
-		Console.WriteLine($"Сума: {a} + {b} = {result}");
-	}
+	protected override string GetOperationSymbol() => "+";
 }
 
 public class Multiply : Operation
 {
-	public override double Calculate(double a, double b)
-	{
-		double result = a * b;
-		Log(a, b, result, "*");
-		return result;
-	}
+	protected override float DoCalculation(float a, float b) => a * b;
+
+	protected override string GetOperationSymbol() => "*";
 }
 
 public class Divide : Operation
 {
-	public override double Calculate(double a, double b)
+	protected override void ValidateInputs(float a, float b)
 	{
-		Validate(a, b);
-		double result = a / b;
-		Log(a, b, result, "/");
-		return result;
+		if (b == 0)
+		{
+			throw new DivideByZeroException("Ділення на нуль не можна");
+		}
 	}
+
+	protected override float DoCalculation(float a, float b)
+	{
+		return a / b;
+	}
+
+	protected override string GetOperationSymbol() => "/";
 }
 
 public class Program
